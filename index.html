@@ -3,73 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. TORRES | Operaciones Estratégicas</title>
+    <title>S. TORRES | OPERACIONES</title>
     <style>
         :root {
-            --fondo-profundo: #050505;
-            --vidrio: rgba(255, 255, 255, 0.05);
-            --borde: rgba(255, 255, 255, 0.1);
-            --acento: #00d4ff; /* Cambiamos a un azul cian táctico para un look más profesional */
-            --texto: #ffffff;
+            --bg-militar: #1a1e1a;
+            --acento-tactico: #55efc4; /* Verde Terminal */
+            --peligro: #ff7675;
+            --gris-metal: #2d3436;
+            --texto: #dfe6e9;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; }
-        body { background-color: var(--fondo-profundo); color: var(--texto); line-height: 1.6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; }
+        body { background-color: var(--bg-militar); color: var(--texto); line-height: 1.4; }
 
         header {
-            height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
-            background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('simulador.jpeg');
-            background-size: cover; background-position: center; border-bottom: 1px solid var(--borde);
+            padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--acento-tactico);
+            background: linear-gradient(rgba(26,30,26,0.9), rgba(26,30,26,0.9)), url('simulador.jpeg');
+            background-size: cover;
         }
 
-        h1 { font-size: 4rem; text-transform: uppercase; letter-spacing: 4px; }
-        h1 span { color: var(--acento); }
+        .status-bar { background: #000; color: var(--acento-tactico); padding: 10px; font-size: 0.8rem; text-align: center; border-bottom: 1px solid var(--acento-tactico); }
+
+        section { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
         
-        section { padding: 100px 20px; max-width: 1000px; margin: 0 auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-
         .card { 
-            background: var(--vidrio); backdrop-filter: blur(10px); border: 1px solid var(--borde);
-            padding: 30px; border-radius: 15px; transition: transform 0.3s ease;
+            background: var(--gris-metal); border: 2px solid #444; padding: 20px; margin-bottom: 30px;
+            position: relative; border-left: 10px solid var(--acento-tactico);
         }
-        .card:hover { transform: translateY(-10px); border-color: var(--acento); }
-        .card img { width: 100%; border-radius: 10px; margin-bottom: 20px; filter: grayscale(50%); }
-
-        .btn-correo {
-            display: inline-block; background: var(--acento); color: #000; padding: 15px 40px;
-            text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px;
-            transition: opacity 0.3s;
+        
+        .card img { width: 100%; height: auto; border: 1px solid #000; filter: contrast(110%) sepia(20%); }
+        
+        .btn-comms {
+            display: block; width: 100%; background: var(--acento-tactico); color: #000;
+            padding: 20px; text-align: center; text-decoration: none; font-weight: bold;
+            text-transform: uppercase; border: none; cursor: pointer;
         }
-        .btn-correo:hover { opacity: 0.8; }
+        .btn-comms:hover { background: var(--peligro); color: #fff; }
     </style>
 </head>
 <body>
 
+    <div class="status-bar">SISTEMA ONLINE // CONEXIÓN ESTABLE // NIVEL DE ACCESO: OPERADOR</div>
+
     <header>
-        <h1>Indie <span>Sign</span></h1>
-        <p>Ingeniería de Alta Fidelidad | Estrategia Táctica</p>
+        <h1>INDIE_SIGN</h1>
+        <p>DIRECCIÓN ESTRATÉGICA DE OPERACIONES</p>
     </header>
 
     <section>
-        <div class="grid">
-            <div class="card">
-                <img src="indie.jpeg" alt="Indie">
-                <h3>Indie Sign</h3>
-                <p>Arquitectura de software escalable.</p>
-            </div>
-            <div class="card">
-                <img src="macro.jpeg" alt="Macro">
-                <h3>Macro Cosmo</h3>
-                <p>Diseño de interfaces humanas.</p>
-            </div>
+        <div class="card">
+            <h3>[01] INGENIERÍA</h3>
+            <img src="indie.jpeg" alt="Ingeniería">
+            <p>> Arquitectura de software escalable para entornos hostiles.</p>
         </div>
-    </section>
 
-    <section style="text-align: center;">
-        <h2>Comando Central</h2>
-        <p>Solicitud de contacto directo para operaciones críticas.</p>
-        <!-- AQUÍ ESTÁ TU BOTÓN DE CORREO -->
-        <a href="mailto: studiomusimx@gmail.com?subject=Solicitud de Contacto - Expo InfoSecurity" class="btn-correo">Enviar Correo Electrónico</a>
+        <div class="card">
+            <h3>[02] MACRO_COSMO</h3>
+            <img src="macro.jpeg" alt="Macro">
+            <p>> Diseño UI/UX enfocado en reducción de fatiga cognitiva.</p>
+        </div>
+
+        <a href="mailto:proyectosdigitales111@outlook.com?subject=TRANSMISIÓN URGENTE: InfoSecurity" class="btn-comms">
+            > INICIAR TRANSMISIÓN (CORREO)
+        </a>
     </section>
 
 </body>
