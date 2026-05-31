@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. TORRES | Consultoría Estratégica</title>
+    <title>S. TORRES | Indie Sign - Ecosistema Tecnológico</title>
     <style>
         :root {
-            --bg-color: #0a0a0a;
-            --accent: #c5a059; /* Dorado elegante */
+            --bg-color: #080808;
+            --accent: #c5a059; /* Dorado Ejecutivo */
             --text-main: #ffffff;
-            --text-muted: #a0a0a0;
+            --text-muted: #999999;
+            --card-bg: #111111;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.7; }
 
         header {
-            height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
-            background: linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.6)), url('simulador.jpeg');
-            background-size: cover; background-position: center; border-bottom: 2px solid var(--accent);
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+            background: linear-gradient(rgba(8,8,8,0.7), rgba(8,8,8,0.9)), url('simulador.jpeg');
+            background-size: cover; background-position: center; border-bottom: 1px solid #333;
         }
 
-        h1 { font-size: 3.5rem; letter-spacing: 5px; text-transform: uppercase; font-weight: 300; }
-        .sub-header { color: var(--accent); letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; margin-top: 10px; }
+        h1 { font-size: 4rem; letter-spacing: 6px; text-transform: uppercase; font-weight: 300; margin-bottom: 10px; }
+        .sub-header { color: var(--accent); letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem; }
 
-        section { padding: 100px 20px; max-width: 900px; margin: 0 auto; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        section { padding: 90px 20px; max-width: 1100px; margin: 0 auto; }
         
-        .card img { width: 100%; border-radius: 4px; filter: grayscale(30%); transition: 0.5s; }
+        .info-corporativa { text-align: center; max-width: 800px; margin: 0 auto 80px auto; }
+        .info-corporativa h2 { font-size: 2rem; margin-bottom: 20px; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; }
+        .info-corporativa p { color: var(--text-muted); font-size: 1.05rem; }
+
+        .divisiones-header { text-align: center; margin-bottom: 50px; font-weight: 300; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { background-color: var(--card-bg); border: 1px solid #222; border-radius: 4px; overflow: hidden; transition: 0.4s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .card img { width: 100%; height: 220px; object-fit: cover; filter: grayscale(40%) contrast(110%); transition: 0.5s; }
         .card:hover img { filter: grayscale(0%); }
         
-        h3 { margin: 20px 0 10px; font-weight: 400; text-transform: uppercase; }
-        p { color: var(--text-muted); font-size: 0.95rem; }
+        .card-content { padding: 30px; }
+        .card h3 { margin-bottom: 15px; font-weight: 400; text-transform: uppercase; letter-spacing: 1px; font-size: 1.2rem; }
+        .card p { color: var(--text-muted); font-size: 0.9rem; }
 
-        .contact-section { text-align: center; padding: 50px 0; border-top: 1px solid #333; margin-top: 50px; }
+        .contact-section { text-align: center; padding: 60px 0; border-top: 1px solid #222; background-color: #0a0a0a; }
         .btn-elegant {
             display: inline-block; border: 1px solid var(--accent); color: var(--accent);
-            padding: 15px 40px; text-decoration: none; text-transform: uppercase;
-            letter-spacing: 2px; font-size: 0.8rem; transition: 0.4s;
+            padding: 15px 45px; text-decoration: none; text-transform: uppercase;
+            letter-spacing: 2px; font-size: 0.85rem; transition: 0.4s; margin-top: 20px;
         }
         .btn-elegant:hover { background: var(--accent); color: #000; }
     </style>
@@ -46,28 +57,53 @@
 
     <header>
         <h1>INDIE SIGN</h1>
-        <p class="sub-header">Ingeniería y Diseño de Alto Nivel</p>
+        <p class="sub-header">Dirección General | S. Torres</p>
     </header>
 
     <section>
+        <div class="info-corporativa">
+            <h2>Ingeniería de Precisión</h2>
+            <p>Indie Sign es un ecosistema de desarrollo tecnológico especializado en la creación de arquitecturas de software de alta fidelidad. Diseñamos soluciones complejas que van desde la conceptualización de interfaces operativas hasta la programación de simuladores tácticos (MILSIM) y entornos virtuales, garantizando un rendimiento sin latencia para operaciones críticas.</p>
+        </div>
+
+        <h3 class="divisiones-header">Estructura Divisional</h3>
         <div class="grid">
+            
+            <!-- División 1: Macro Cosmo -->
             <div class="card">
-                <img src="indie.jpeg" alt="Ingeniería">
-                <h3>Ingeniería de Software</h3>
-                <p>Desarrollo de arquitecturas robustas bajo estrictos estándares de calidad y escalabilidad.</p>
+                <img src="macro.jpeg" alt="Macro Cosmo Studio">
+                <div class="card-content">
+                    <h3>Macro Cosmo Studio</h3>
+                    <p>División especializada en UI/UX y diseño de identidad. Aplicamos principios de psicología visual para desarrollar interfaces humanas e intuitivas que reducen drásticamente la fatiga cognitiva del operador.</p>
+                </div>
             </div>
+
+            <!-- División 2: Quetzal -->
             <div class="card">
-                <img src="macro.jpeg" alt="Macro">
-                <h3>Consultoría UI/UX</h3>
-                <p>Diseño de interfaces humanas que optimizan la interacción y reducen la carga cognitiva.</p>
+                <img src="indie.jpeg" alt="División Quetzal">
+                <div class="card-content">
+                    <h3>División Quetzal</h3>
+                    <p>Rama enfocada en el desarrollo ágil, innovación de entornos dinámicos y la integración de arquitecturas escalables. Optimizamos los procesos de ingeniería para despliegues tecnológicos rápidos y seguros.</p>
+                </div>
             </div>
+
+            <!-- División 3: Tecpatl -->
+            <div class="card">
+                <img src="simulador.jpeg" alt="División Tecpatl">
+                <div class="card-content">
+                    <h3>División Tecpatl</h3>
+                    <p>Unidad de simulación táctica. Encargada de la programación de motores físicos, integración de balística realista y creación de escenarios para entrenamiento en toma de decisiones bajo presión.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section class="contact-section">
-        <h3>Contacto Ejecutivo</h3>
-        <p style="margin-bottom: 30px;">Disponibilidad inmediata para operaciones y proyectos especiales.</p>
-        <a href="mailto:indiesigncontacto@gmail.com?subject=Solicitud de Contacto - Propuesta Ejecutiva" class="btn-elegant">Solicitar Reunión</a>
+        <h3 style="color: #fff; font-weight: 300; letter-spacing: 2px; text-transform: uppercase;">Contacto Ejecutivo</h3>
+        <p style="color: #888; margin-top: 10px;">Establezca comunicación directa con la Dirección General.</p>
+        <!-- Reemplaza con tu correo -->
+        <a href="mailto:TU_CORREO_AQUI@ejemplo.com?subject=Solicitud de Contacto - InfoSecurity" class="btn-elegant">Solicitar Enlace</a>
     </section>
 
 </body>
