@@ -24,7 +24,7 @@
             text-align: center;
             padding: 0 20px;
             border-bottom: 2px solid var(--gris-interfaz);
-            background-image: linear-gradient(rgba(7, 7, 7, 0.9), rgba(7, 7, 7, 0.9)), url('simulador.jpg');
+            background-image: linear-gradient(rgba(7, 7, 7, 0.9), rgba(7, 7, 7, 0.9)), url('simulador.jpeg');
             background-size: cover;
             background-position: center;
         }
@@ -65,14 +65,14 @@
         <h2>Despliegue Operativo</h2>
         <div class="divisiones-grid">
             <div class="card">
-                <img src="indie.jpg" alt="Ingeniería Indie Sign" class="imagen-tactica">
+                <img src="indie.jpeg" alt="Ingeniería Indie Sign" class="imagen-tactica">
                 <div class="card-content">
                     <h3>Indie Sign</h3>
                     <p>Ingeniería de software robusta y sin latencia. Desarrollamos simuladores interactivos y arquitecturas complejas bajo estrictos estándares DevSecOps para operaciones críticas.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="macro.jpg" alt="Diseño Macro Cosmo" class="imagen-tactica">
+                <img src="macro.jpeg" alt="Diseño Macro Cosmo" class="imagen-tactica">
                 <div class="card-content">
                     <h3>Macro Cosmo Studio</h3>
                     <p>Diseño de interfaces de usuario (UI/UX) e identidad corporativa con estética táctica. Reducimos la fatiga cognitiva del operador a través de psicología visual aplicada.</p>
@@ -85,7 +85,7 @@
         <h2>Capacidades Técnicas</h2>
         <div class="divisiones-grid" style="grid-template-columns: 1fr;">
             <div class="card" style="border-left-color: #555;">
-                <img src="simulador.jpg" alt="Simulación" class="imagen-tactica" style="height: 150px;">
+                <img src="simulador.jpeg" alt="Simulación" class="imagen-tactica" style="height: 150px;">
                 <div class="card-content">
                     <h3>Simulación Interactiva & Entornos Tácticos</h3>
                     <p>Desarrollo de escenarios de alta fidelidad para entrenamiento, evaluación de toma de decisiones y capacitación de equipos de respuesta.</p>
